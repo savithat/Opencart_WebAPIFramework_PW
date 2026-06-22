@@ -1,0 +1,11 @@
+{
+  type: 'amadeusOAuth2Token',
+  username: 'savithavera2@gmail.com',
+  application_name: 'Savi-app',
+  client_id: 'ALGsECYfKPEy1MX4zWwYmJZRoVMH5vbd',
+  token_type: 'Bearer',
+  access_token: 'kJStYKIOQJ7oFGR7O7p8ZieRvUop',
+  expires_in: 1799,
+  state: 'approved',
+  scope: ''
+}

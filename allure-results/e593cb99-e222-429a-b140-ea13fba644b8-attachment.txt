@@ -1,0 +1,11 @@
+**** {
+  status: 201,
+  body: {
+    id: 8512696,
+    name: 'sam',
+    email: 'sam_1781825023274@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  }
+}
+****careateUserResponse:  201

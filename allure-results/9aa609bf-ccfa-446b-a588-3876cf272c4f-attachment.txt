@@ -1,0 +1,17 @@
+{
+  type: 'amadeusOAuth2Token',
+  username: 'savithavera2@gmail.com',
+  application_name: 'Savi-app',
+  client_id: 'ALGsECYfKPEy1MX4zWwYmJZRoVMH5vbd',
+  token_type: 'Bearer',
+  access_token: 'iN7oP4Ep26xaHZGK2XXM7xuv8YWF',
+  expires_in: 1799,
+  state: 'approved',
+  scope: ''
+}
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 648,
+  [Symbol(trigger_async_id_symbol)]: 510,
+  [Symbol(kResourceStore)]: undefined
+}

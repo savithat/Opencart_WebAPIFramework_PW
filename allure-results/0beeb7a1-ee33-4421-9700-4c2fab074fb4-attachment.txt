@@ -1,0 +1,47 @@
+{
+  type: 'amadeusOAuth2Token',
+  username: 'savithavera2@gmail.com',
+  application_name: 'Savi-app',
+  client_id: 'ALGsECYfKPEy1MX4zWwYmJZRoVMH5vbd',
+  token_type: 'Bearer',
+  access_token: 'LRlMNtfhFtx84UCGkcV6jKDiG4kA',
+  expires_in: 1799,
+  state: 'approved',
+  scope: ''
+}
+{
+  meta: {
+    count: 2,
+    links: {
+      self: 'https://test.api.amadeus.com/v1/reference-data/locations?subType=CITY,AIRPORT&keyword=SFO'
+    }
+  },
+  data: [
+    {
+      type: 'location',
+      subType: 'CITY',
+      name: 'SAN FRANCISCO',
+      detailedName: 'SAN FRANCISCO/CA/US',
+      id: 'CSFO',
+      self: [Object],
+      timeZoneOffset: '-07:00',
+      iataCode: 'SFO',
+      geoCode: [Object],
+      address: [Object],
+      analytics: [Object]
+    },
+    {
+      type: 'location',
+      subType: 'AIRPORT',
+      name: 'SAN FRANCISCO INTL',
+      detailedName: 'SAN FRANCISCO/CA/US:SAN FRANCI',
+      id: 'ASFO',
+      self: [Object],
+      timeZoneOffset: '-07:00',
+      iataCode: 'SFO',
+      geoCode: [Object],
+      address: [Object],
+      analytics: [Object]
+    }
+  ]
+}
