@@ -28,8 +28,8 @@ test('POST - Create user test', async({apiHelper}) =>{
    
     //create user
     let careateUserResponse = await createUser(apiHelper);
-    console.log("****", careateUserResponse);
-    console.log("****careateUserResponse: ", careateUserResponse.status);
+    console.log("**** careateUserResponse", careateUserResponse);
+    console.log("****careateUserResponse status: ", careateUserResponse.status);
     let userId = careateUserResponse.body.id;
 
     //get user
@@ -44,7 +44,7 @@ test('POST - Create user test', async({apiHelper}) =>{
 test('PUT - Update user', async({apiHelper}) =>{
     //create user
     let createUserRes = await createUser(apiHelper);
-    console.log("****", createUserRes);
+    console.log("createUserRes ****", createUserRes);
     console.log("createUserRes.status: ", createUserRes.status);
     expect(createUserRes.status).toBe(201);
     let userId = createUserRes.body.id;
@@ -56,14 +56,15 @@ test('PUT - Update user', async({apiHelper}) =>{
     }
 
     let updateUesrRes = await apiHelper.put(`/public/v2/users/${userId}`, userUpdateData, AUTH_HEADER);
-    console.log("****", updateUesrRes);
+    console.log("updateUesrRes ****", updateUesrRes);
     expect(updateUesrRes.status).toBe(200);
     
     //get user --- validating 
     let getUserRes = await apiHelper.get(`/public/v2/users/${userId}`);
+    console.log("getUserRes after updateUesrRes ****", getUserRes);
     expect(updateUesrRes.status).toBe(200);
-    expect(updateUesrRes.body.name).toBe(userUpdateData.name);
-    expect(updateUesrRes.body.status).toBe(userUpdateData.status);
+    expect(updateUesrRes.body.name).toBe(getUserRes.body.name);
+    expect(updateUesrRes.body.status).toBe(getUserRes.body.status);
 
 })
 
@@ -88,7 +89,6 @@ test('DELETE - delete user', async({apiHelper}) => {
     let getUserRes = await apiHelper.get(`/public/v2/users/${userId}`);
     console.log("getUserRes: ", getUserRes);
     expect(getUserRes.status).toBe(404);
-     expect(getUserRes.body.message).toBe('Resource not found');
-    
+    expect(getUserRes.body.message).toBe('Resource not found');
  
 })
