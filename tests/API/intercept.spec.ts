@@ -40,7 +40,7 @@ test('mock search data api', async({page}) =>{
      });   
 
      await page.goto('https://naveenautomationlabs.com/opencart/index.php?route=product/search&search=macbook');
-     await page.pause();
+    // await page.pause();
 
      
      let fakeJson = await page.evaluate(async() =>{
