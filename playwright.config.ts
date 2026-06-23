@@ -8,7 +8,7 @@ dotenv.config({path:`config/.env.${ENV}`});
 console.log("Loaded BASE_URL:", process.env.BASE_URL);
 
 console.log("API_BASE_URL:", process.env.API_BASE_URL);
-console.log("API_Token:", process.env.API_Token);
+console.log("API_TOKEN:", process.env.API_TOKEN);
 
 export default defineConfig({
   testDir: './tests',
