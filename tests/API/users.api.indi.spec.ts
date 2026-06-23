@@ -28,12 +28,13 @@ test('POST - Create user test', async({apiHelper}) =>{
    
     //create user
     let careateUserResponse = await createUser(apiHelper);
-    console.log("**** careateUserResponse", careateUserResponse);
     console.log("****careateUserResponse status: ", careateUserResponse.status);
+    console.log("**** careateUserResponse", careateUserResponse);
     let userId = careateUserResponse.body.id;
 
     //get user
     let getCreatedUserRes =  await apiHelper.get(`/public/v2/users/${userId}`, AUTH_HEADER);
+    console.log("**** getCreatedUserRes", getCreatedUserRes);
     expect(getCreatedUserRes.status).toBe(200);
     expect(getCreatedUserRes.body.name).toBe(careateUserResponse.body.name);
 
@@ -44,8 +45,8 @@ test('POST - Create user test', async({apiHelper}) =>{
 test('PUT - Update user', async({apiHelper}) =>{
     //create user
     let createUserRes = await createUser(apiHelper);
-    console.log("createUserRes ****", createUserRes);
     console.log("createUserRes.status: ", createUserRes.status);
+    console.log("createUserRes ****", createUserRes);
     expect(createUserRes.status).toBe(201);
     let userId = createUserRes.body.id;
     
@@ -62,9 +63,9 @@ test('PUT - Update user', async({apiHelper}) =>{
     //get user --- validating 
     let getUserRes = await apiHelper.get(`/public/v2/users/${userId}`);
     console.log("getUserRes after updateUesrRes ****", getUserRes);
-    expect(updateUesrRes.status).toBe(200);
-    expect(updateUesrRes.body.name).toBe(getUserRes.body.name);
-    expect(updateUesrRes.body.status).toBe(getUserRes.body.status);
+    expect(getUserRes.status).toBe(200);
+    expect(userUpdateData.name).toBe(getUserRes.body.name);
+    expect(userUpdateData.status).toBe(getUserRes.body.status);
 
 })
 
