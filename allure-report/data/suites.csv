@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1181","PUT - Update user","chromium","2026-06-18","passed","2026-06-18","","API/users.api.indi.spec.ts","",""
-"","1117","DELETE - delete user","chromium","2026-06-18","passed","2026-06-18","","API/users.api.indi.spec.ts","",""
-"","1255","POST - Create user test","chromium","2026-06-18","passed","2026-06-18","","API/users.api.indi.spec.ts","",""
