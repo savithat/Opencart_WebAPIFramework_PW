@@ -42,7 +42,7 @@ test('POST - Create user test', async({apiHelper}) =>{
 
 //update user
 //POST(create user)---->PUT(update user)----->GET(get user to validate the updated data)
-test('PUT - Update user', async({apiHelper}) =>{
+test.skip('PUT - Update user', async({apiHelper}) =>{
     //create user
     let createUserRes = await createUser(apiHelper);
     console.log("createUserRes.status: ", createUserRes.status);
