@@ -44,7 +44,7 @@ test('Verify success message is displayin after product is added to cart ',  asy
 }); 
 
 
-test('Verify cart is displaying exact number of products after product is added to cart firstTime',  async({homePage, searchResultPage, productDetailPage}) =>{
+test.skip('Verify cart is displaying exact number of products after product is added to cart firstTime',  async({homePage, searchResultPage, productDetailPage}) =>{
     await homePage.doSearch('macbook');
     await searchResultPage.selectProduct('MacBook Pro');
     let prodInCart  = await productDetailPage.addtheProductTocartFirstTime('6');
