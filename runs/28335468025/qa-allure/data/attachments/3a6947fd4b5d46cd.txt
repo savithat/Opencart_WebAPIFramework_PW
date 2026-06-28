@@ -1,0 +1,2 @@
+user creadentials: savi@opencart.com, savi@12345
+My Account,My Orders,My Affiliate Account,Newsletter

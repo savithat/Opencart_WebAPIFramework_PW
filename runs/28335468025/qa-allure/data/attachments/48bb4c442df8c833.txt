@@ -1,0 +1,72 @@
+[
+  {
+    id: 8527072,
+    name: 'Tenali Ramakrishna',
+    email: 'Sam_1782679702375@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8527070,
+    name: 'sam',
+    email: 'sam_1782679699996@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8527069,
+    name: 'Nidhi',
+    email: 'automation_1782679626904@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8526789,
+    name: 'Aanjaneya Iyengar',
+    email: 'aanjaneya_iyengar@hickle.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8526787,
+    name: 'Devika Asan',
+    email: 'asan_devika@bechtelar-hintz.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8526786,
+    name: 'Sweta Khanna',
+    email: 'sweta_khanna@shields.example',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8526785,
+    name: 'Dwaipayana Gupta',
+    email: 'gupta_dwaipayana@nolan-upton.example',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8526784,
+    name: 'Kannen Kaniyar',
+    email: 'kannen_kaniyar@auer.example',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8526572,
+    name: 'Nidhi',
+    email: 'automation_1782653368266@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8526570,
+    name: 'Tenali Ramakrishna',
+    email: 'Sam_1782653364789@gmail.com',
+    gender: 'male',
+    status: 'active'
+  }
+]
