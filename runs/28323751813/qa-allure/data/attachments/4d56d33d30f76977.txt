@@ -1,0 +1,21 @@
+****careateUserResponse status:  201
+**** careateUserResponse {
+  status: 201,
+  body: {
+    id: 8526568,
+    name: 'sam',
+    email: 'sam_1782653361616@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  }
+}
+**** getCreatedUserRes {
+  status: 200,
+  body: {
+    id: 8526568,
+    name: 'sam',
+    email: 'sam_1782653361616@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  }
+}

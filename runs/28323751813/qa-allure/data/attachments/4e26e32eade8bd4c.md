@@ -1,0 +1,89 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: homepage.spec.ts >> homepage logo visible test
+- Location: tests/homepage.spec.ts:16:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded while running "beforeEach" hook.
+```
+
+```
+Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://naveenautomationlabs.com/opencart/index.php?route=account/login", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import {Locator, Page} from "@playwright/test"
+  2  | import { BasePage } from "./BasePage";
+  3  | 
+  4  | 
+  5  | export class LoginPage extends BasePage{
+  6  | 
+  7  |     //private locators
+  8  |     private readonly emailAddress :Locator;
+  9  |     private readonly password : Locator;
+  10 |     private readonly loginButton : Locator;
+  11 |     private readonly forgotPassword : Locator;
+  12 |   //  private readonly logo : Locator;
+  13 |     private readonly loginErrorMessage: Locator;
+  14 | 
+  15 | 
+  16 |     //const of the class: initialize the locators
+  17 |     constructor(page: Page){
+  18 |         super(page);
+  19 |         this.emailAddress = page.getByRole('textbox', {name: 'E-Mail Address'});
+  20 |         this.password = page.getByRole('textbox', {name: 'Password'});
+  21 |         this. loginButton = page.getByRole('button', {name: 'Login'});
+  22 |         this. forgotPassword = page.locator("form").getByRole('link',{name: 'Forgotten Password'});
+  23 |      //   this.logo = page.getByAltText('naveenopencart');   //some common locators are in BasePage class
+  24 |         this.loginErrorMessage = page.locator('.alert.alert-danger.alert-dismissible');
+  25 |     }
+  26 | 
+  27 | 
+  28 | //public page actions/behaviour
+  29 |     async goTologinPage() : Promise<void>{
+> 30 |         await this.page.goto("opencart/index.php?route=account/login");
+     |                         ^ Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+  31 |     }
+  32 | 
+  33 | 
+  34 |     async getloginPageTitle() : Promise<string>{
+  35 |         return await this.page.title();
+  36 |     }
+  37 | 
+  38 | 
+  39 |     async isForgottenPasswordExist() : Promise<boolean>{
+  40 |         return await this.forgotPassword.isVisible();
+  41 |     }
+  42 | 
+  43 | 
+  44 |     
+  45 |     async doLogin(username: string, password: string) : Promise<void>{
+  46 |         console.log(`user creadentials: ${username}, ${password}`);
+  47 |         await this.emailAddress.fill(username);
+  48 |         await this.password.fill(password);
+  49 |         await this.loginButton.click();
+  50 | 
+  51 |     }
+  52 | 
+  53 | 
+  54 |     async isInvalidLoginErrorDisplayedOrNot() : Promise<boolean>{
+  55 |         return await this.loginErrorMessage.isVisible();
+  56 |     }
+  57 | 
+  58 | 
+  59 |     
+  60 | }
+```
