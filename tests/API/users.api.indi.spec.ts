@@ -24,7 +24,7 @@ async function createUser(apiHelper: any){
 //Test1 : Create a user test + verify AAA
 //POST ----> userId --->Get / userId --- verify
 
-test('POST - Create user test', async({apiHelper}) =>{
+test('@regression POST - Create user test', async({apiHelper}) =>{
    
     //create user
     let careateUserResponse = await createUser(apiHelper);
@@ -72,7 +72,7 @@ test.skip('PUT - Update user', async({apiHelper}) =>{
 
 //DELETE user
 //POST(Create user) -----> DELETE(Delete user)--------->GET(get user to validate user is deleted)
-test('DELETE - delete user', async({apiHelper}) => {
+test('@smoke DELETE - delete user', async({apiHelper}) => {
     //create user
     let createUserRes = await createUser(apiHelper);
     console.log("****", createUserRes);

@@ -3,7 +3,7 @@ import {test, expect} from "@playwright/test";
 let AUTH_TOKEN = {Authorization : 'Bearer 9575eecc50ef87ef1ce1f1ae7453a4ad14d0f6e316bd23342a705745f0bc42fb'};
 
 
-test('get user test', async({request}) =>{
+test('@smoke get user test', async({request}) =>{
     let response = await request.get('https://gorest.co.in/public/v2/users/8502164', {
         headers: AUTH_TOKEN});
    
@@ -16,7 +16,7 @@ test('get user test', async({request}) =>{
 });
 
 
-test('create user test', async({request}) =>{
+test('@smoke create user test', async({request}) =>{
 
     //JS Object
     let userData = {
@@ -41,7 +41,7 @@ test('create user test', async({request}) =>{
 
 
 
-test('Update user test', async({request}) =>{
+test('@smoke Update user test', async({request}) =>{
 
     //JS Object
     let userData = {

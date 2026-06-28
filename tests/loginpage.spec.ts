@@ -34,7 +34,7 @@ test('user is able to login test', async({loginPage, homePage}) =>{
 
 
 //DD_1, sequence mode
-test('login to app using wrong credentials with data driven test', async({loginPage, testData}) =>{
+test('@regression login to app using wrong credentials with data driven test', async({loginPage, testData}) =>{
   for(let row of testData){
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isInvalidLoginErrorDisplayedOrNot()).toBeTruthy();
@@ -47,7 +47,7 @@ test('login to app using wrong credentials with data driven test', async({loginP
 //DD_2, without fixtures, arallel mode, read csv data directly and loop the test method ow wise...
 let testData = CsvHelper.readCsv('src/data/loginData.csv');
 for(let row of testData){
-    test(`invalid login test with - ${row.username} - ${row.password}`, async({loginPage}) =>{
+    test(`@regression invalid login test with - ${row.username} - ${row.password}`, async({loginPage}) =>{
         await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isInvalidLoginErrorDisplayedOrNot()).toBeTruthy();
     
@@ -75,7 +75,7 @@ for(let row of testData){
 //readJson('src/data/logindata.json');
 let jsonTestData = JsonHelper.readJson('src/data/logindata.json');
 for(let row of jsonTestData){
-    test(`invalid login test with JSON data - ${row.username} - ${row.password}`, async({loginPage}) =>{
+    test(`@smoke invalid login test with JSON data - ${row.username} - ${row.password}`, async({loginPage}) =>{
          await loginPage.doLogin(row.username, row.password);
         expect(await loginPage.isInvalidLoginErrorDisplayedOrNot()).toBeTruthy();
     

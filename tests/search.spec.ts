@@ -28,7 +28,7 @@ test('Search result product list  test', async({homePage, searchResultPage}) =>{
 
 
 for(const row of productData){
-test(`Verify user is able to land on the product page test ${row.searckey}-${row.productname}`, async({homePage, searchResultPage, page}) =>{
+test(`@smoke Verify user is able to land on the product page test ${row.searckey}-${row.productname}`, async({homePage, searchResultPage, page}) =>{
     await homePage.doSearch(row.searckey);
     await searchResultPage.selectProduct(row.productname);
     expect(await page.title()).toBe(row.productname);
@@ -38,7 +38,7 @@ test(`Verify user is able to land on the product page test ${row.searckey}-${row
 
 
 
-test('Select product from search result product list test', async({homePage, searchResultPage, productDetailPage}) =>{
+test('@regression Select product from search result product list test', async({homePage, searchResultPage, productDetailPage}) =>{
     await homePage.doSearch('macbook');
     console.log(await searchResultPage.getProductResultList());
     let productResultList: string[]  = await searchResultPage.getProductResultList();
