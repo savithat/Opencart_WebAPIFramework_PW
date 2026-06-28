@@ -1,0 +1,11 @@
+TOKEN: {
+  Authorization: 'Bearer 9575eecc50ef87ef1ce1f1ae7453a4ad14d0f6e316bd23342a705745f0bc42fb'
+}
+{
+  id: 8526133,
+  name: 'sam',
+  email: 'sam_1782630564500@opencart.com',
+  gender: 'female',
+  status: 'inactive'
+}
+8526133

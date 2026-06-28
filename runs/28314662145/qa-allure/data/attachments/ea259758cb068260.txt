@@ -1,0 +1,72 @@
+[
+  {
+    id: 8526130,
+    name: 'sam',
+    email: 'sam_1782630561271@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8526128,
+    name: 'Nidhi',
+    email: 'automation_1782630497408@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8526124,
+    name: 'Nidhi',
+    email: 'automation_1782630336123@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8526122,
+    name: 'Tenali Ramakrishna',
+    email: 'Sam_1782630334381@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8526120,
+    name: 'sam',
+    email: 'sam_1782630331745@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8526115,
+    name: 'Ram',
+    email: 'sam_1782629768468@opencart.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8525935,
+    name: 'Nidhi',
+    email: 'automation_1782598753653@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8525933,
+    name: 'Tenali Ramakrishna',
+    email: 'Sam_1782598752265@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8525931,
+    name: 'sam',
+    email: 'sam_1782598750417@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8525930,
+    name: 'Nidhi',
+    email: 'automation_1782598577555@Open.com',
+    gender: 'female',
+    status: 'active'
+  }
+]

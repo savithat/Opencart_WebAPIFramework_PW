@@ -1,0 +1,13 @@
+**** {
+  status: 201,
+  body: {
+    id: 8526131,
+    name: 'sam',
+    email: 'sam_1782630562733@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  }
+}
+createUserRes.status:  201
+**** { status: 204, statusText: 'No Content' }
+getUserRes:  { status: 404, body: { message: 'Resource not found' } }

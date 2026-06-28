@@ -1,0 +1,9 @@
+{
+  id: 8526134,
+  name: 'Nidhi',
+  email: 'automation_1782630565072@Open.com',
+  gender: 'female',
+  status: 'active'
+}
+201
+Created

@@ -1,0 +1,11 @@
+user creadentials: savi@opencart.com, savi@12345
+Searck key: macbook
+actualProductInfo:  Map(7) {
+  'ProductHeader' => 'MacBook Pro',
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 18',
+  'Reward Points' => '800',
+  'Availability' => 'Out Of Stock',
+  'ProductPrice' => '$2,000.00',
+  'ExTaxPrice' => '$2,000.00'
+}
