@@ -30,7 +30,7 @@ test.beforeEach('POST- generate access token',  async({request})=>{
 
 
 //try data driven: use csv helper
-test('@regression GET - get location data', async({request})=>{
+test('GET - get location data', async({request})=>{
 
     let baseURL = 'https://test.api.amadeus.com';
     let endPOintURL = '/v1/reference-data/locations';

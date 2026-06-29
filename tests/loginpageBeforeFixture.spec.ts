@@ -30,7 +30,7 @@ test('forgot password link exist', async({}) =>{
 })
 
 
-test('user is able to login test', async({}) =>{
+test('@regression user is able to login test', async({}) =>{
     await logingPage.doLogin('savi@opencart.com', 'savi@12345');
     expect(await homePage.isLOgoutLinkExist).toBeTruthy();
    expect(await homePage.getHomepageTitle()).toEqual('My Account'); 
