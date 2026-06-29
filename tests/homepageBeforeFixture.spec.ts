@@ -19,7 +19,7 @@ test('homepage title test', async({}) =>{
 })
 
 
-test('logout link exist test', async({}) =>{
+test('@sanity logout link exist test', async({}) =>{
     expect(homePage.isLOgoutLinkExist).toBeTruthy();
 })
 

@@ -8,12 +8,12 @@ test.beforeEach(async({loginPage}) =>{
 })
 
 
-test('homepage title test', async({homePage}) =>{
+test('@sanity homepage title test', async({homePage}) =>{
     expect(await homePage.getHomepageTitle()).toEqual('My Account');
 });
 
 
-test('homepage logo visible test', async({basePage, homePage}) =>{
+test('@sanity homepage logo visible test', async({basePage, homePage}) =>{
     expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
