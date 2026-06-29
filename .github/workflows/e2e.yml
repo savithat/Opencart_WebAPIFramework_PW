@@ -107,7 +107,7 @@ jobs:
           echo "========================================="
           echo "  Running SANITY @smoke on DEV"
           echo "========================================="
-          npx playwright test --project=chromium --grep @smoke
+          npx playwright test --project=chromium --grep @sanity
         env:
           ENV: dev
           BASE_URL: ${{ secrets.BASE_URL }}
@@ -192,7 +192,7 @@ jobs:
           echo "========================================="
           echo "  Running REGRESSION (all tests) on QA"
           echo "========================================="
-          npx playwright test --project=chromium
+          npx playwright test --project=chromium --grep @regression
         env:
           ENV: qa
           BASE_URL: ${{ secrets.BASE_URL }}
@@ -277,7 +277,7 @@ jobs:
           echo "========================================="
           echo "  Running SANITY @smoke on STAGE"
           echo "========================================="
-          npx playwright test --project=chromium --grep @smoke
+          npx playwright test --project=chromium --grep @sanity
         env:
           ENV: stage
           BASE_URL: ${{ secrets.BASE_URL }}
