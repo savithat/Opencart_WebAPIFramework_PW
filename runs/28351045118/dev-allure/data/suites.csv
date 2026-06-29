@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3070","@sanity homepage title test","chromium","2026-06-29","passed","2026-06-29","","homepage.spec.ts","",""
+"","2994","@sanity homepage logo visible test","chromium","2026-06-29","passed","2026-06-29","","homepage.spec.ts","",""
+"","2720","@sanity logout link exist test","chromium","2026-06-29","passed","2026-06-29","","homepageBeforeFixture.spec.ts","",""

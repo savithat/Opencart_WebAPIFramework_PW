@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","40180","@regression invalid login test with - - pw123","chromium","2026-06-29","broken","2026-06-29","","loginpage.spec.ts","",""
+"","42781","@regression Select product from search result product list test","chromium","2026-06-29","broken","2026-06-29","","search.spec.ts","",""
+"","811","@regression GET - get location data","chromium","2026-06-29","passed","2026-06-29","","API/amedus.oauth2.spec.ts","",""
+"","42795","@regression invalid login test with - invalid@open.com - wrong23","chromium","2026-06-29","broken","2026-06-29","","loginpage.spec.ts","",""
+"","40188","@regression login to app using wrong credentials with data driven test","chromium","2026-06-29","broken","2026-06-29","","loginpage.spec.ts","",""
+"","1117","@regression POST - Create user test","chromium","2026-06-29","passed","2026-06-29","","API/users.api.indi.spec.ts","",""
+"","40191","@regression invalid login test with - savi@opencart.com - ssaff","chromium","2026-06-29","broken","2026-06-29","","loginpage.spec.ts","",""
