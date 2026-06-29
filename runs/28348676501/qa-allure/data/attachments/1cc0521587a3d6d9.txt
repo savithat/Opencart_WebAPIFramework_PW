@@ -1,0 +1,5 @@
+user creadentials: savi@opencart.com, savi@12345
+Searck key: macbook
+[ 'MacBook', 'MacBook Air', 'MacBook Pro' ]
+product:  MacBook Pro
+**** MacBook Pro

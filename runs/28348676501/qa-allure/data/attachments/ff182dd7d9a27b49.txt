@@ -1,0 +1,4 @@
+user creadentials: savi@opencart.com, savi@12345
+Searck key: macbook
+sucessMasaage:  Success: You have added MacBook Pro to your shopping cart!
+×
