@@ -1,0 +1,2 @@
+user creadentials: savi@opencart.com, savi@12345
+Searck key: macbook

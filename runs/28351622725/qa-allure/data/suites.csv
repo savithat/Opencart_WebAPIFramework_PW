@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1820","@regression POST - Create user test","chromium","2026-06-29","passed","2026-06-29","","API/users.api.indi.spec.ts","",""
+"","3075","@regression user is able to login test","chromium","2026-06-29","passed","2026-06-29","","loginpageBeforeFixture.spec.ts","",""
+"","7521","@regression Select product from search result product list test","chromium","2026-06-29","passed","2026-06-29","","search.spec.ts","",""
