@@ -1,0 +1,72 @@
+[
+  {
+    id: 8539139,
+    name: 'Tenali Ramakrishna',
+    email: 'Sam_1783407505371@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8539138,
+    name: 'sam',
+    email: 'sam_1783407503904@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8539137,
+    name: 'sam',
+    email: 'sam_1783407501829@opencart.com',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8539135,
+    name: 'Nidhi',
+    email: 'automation_1783407408888@Open.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8539129,
+    name: 'schema test',
+    email: 'automation_1783407062277@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8539119,
+    name: 'schema test',
+    email: 'automation_1783406757045@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8539117,
+    name: 'Naveen API Updated',
+    email: 'automation_1783406747189@open.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8539116,
+    name: 'Naveen API',
+    email: 'automation_1783406745524@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8539103,
+    name: 'schema test',
+    email: 'automation_1783406623948@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8538993,
+    name: 'Nidhi',
+    email: 'automation_1783405619161@Open.com',
+    gender: 'female',
+    status: 'active'
+  }
+]

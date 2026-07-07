@@ -1,0 +1,5 @@
+user creadentials: savi@opencart.com, savi@12345
+Searck key: macbook
+prodQuanitity 8
+before add to cart:  [ '8 item(s) - $16,000.00' ]
+cart page title is:  Shopping Cart
