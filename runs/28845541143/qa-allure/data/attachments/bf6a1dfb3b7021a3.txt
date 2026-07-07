@@ -1,0 +1,2 @@
+user creds: savi@opencart.com - savi@12345
+home page headers:  [ 'My Account', 'My Orders', 'My Affiliate Account', 'Newsletter' ]
