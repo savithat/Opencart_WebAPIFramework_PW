@@ -68,7 +68,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIFramework
+          repository: savithat/Opencart_WebAPIFramework_PW
 
       - name: Build Docker Image
         run: |
