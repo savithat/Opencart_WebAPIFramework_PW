@@ -75,7 +75,7 @@ pipeline {
                 echo "  Building Playwright Docker Image"
                 echo "========================================="
                 dir('qa-tests') {
-                    git url: 'https://github.com/naveenanimation20/OpenCartWebAPIFramework.git',
+                    git url: 'https://github.com/savithat/Opencart_WebAPIFramework_PW',
                         branch: 'main'
                     sh "docker build -t ${DOCKER_IMAGE} ."
                 }
@@ -285,7 +285,7 @@ pipeline {
             steps {
                 input message: 'Deploy to PROD?',
                     ok: 'Yes, Deploy!',
-                    submitter: 'admin,naveen'
+                    submitter: 'admin,savitha'
             }
         }
 
@@ -382,7 +382,7 @@ pipeline {
 
                 // Email Notification
                 emailext(
-                    to: 'naveenanimation20@gmail.com,training@naveenautomationlabs.com',
+                    to: 'savitha.tm@gmail.com,training@naveenautomationlabs.com',
                     subject: "🎭 CI/CD (Docker) — ${statusEmoji} ${buildStatus} — Build #${env.BUILD_NUMBER}",
                     mimeType: 'text/html',
                     body: """
