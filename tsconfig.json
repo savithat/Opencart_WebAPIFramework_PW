@@ -1,35 +1,8 @@
-// {
-//     "compilerOptions": {
-//         "target": "ES2020",
-//         "module": "ESNext",   //es2020
-//          "moduleResolution": "node",
-//         "lib": [
-//             "ES2020",
-//             "DOM"
-//         ],
-//         "types": [
-//             "node"
-//         ],
-//         "strict": true,
-//         "esModuleInterop": true,
-//         "resolveJsonModule": true,
-//         "outDir": "./dist"
-//     },
-//     "include": [
-//         "**/*.ts"
-//     ],
-//     "exclude": [
-//         "node_modules"
-//     ]
-// }
-
-
-
 {
     "compilerOptions": {
         "target": "ES2020",
-        "module": "es2022",
-        "moduleResolution": "bundler",
+        "module": "ESNext",   //es2020
+         "moduleResolution": "node",
         "lib": [
             "ES2020",
             "DOM"
@@ -40,21 +13,48 @@
         "strict": true,
         "esModuleInterop": true,
         "resolveJsonModule": true,
-        "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
-        "outDir": "./dist",
-        "rootDir": "./src",
-        "skipLibCheck": true
+        "outDir": "./dist"
     },
     "include": [
-        "src/**/*.ts"
+        "**/*.ts"
     ],
     "exclude": [
-        "node_modules",
-        "dist",
-        "tests",
-        "reports",
-        "allure-results"
+        "node_modules"
     ]
 }
+
+
+
+// {
+//     "compilerOptions": {
+//         "target": "ES2020",
+//         "module": "es2022",
+//         "moduleResolution": "bundler",
+//         "lib": [
+//             "ES2020",
+//             "DOM"
+//         ],
+//         "types": [
+//             "node"
+//         ],
+//         "strict": true,
+//         "esModuleInterop": true,
+//         "resolveJsonModule": true,
+//         "declaration": true,
+//         "declarationMap": true,
+//         "sourceMap": true,
+//         "outDir": "./dist",
+//         "rootDir": "./src",
+//         "skipLibCheck": true
+//     },
+//     "include": [
+//         "src/**/*.ts"
+//     ],
+//     "exclude": [
+//         "node_modules",
+//         "dist",
+//         "tests",
+//         "reports",
+//         "allure-results"
+//     ]
+// }
